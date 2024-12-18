@@ -1,18 +1,12 @@
-import Nav from 'react-bootstrap/Nav';
+import { NavLink } from "react-router";
 
 function NavBar() {
   return (
-    <Nav defaultActiveKey="/home" as="ul">
-      <Nav.Item as="li">
-        <Nav.Link href="/home">Active</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-        <Nav.Link eventKey="link-1">Link</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-        <Nav.Link eventKey="link-2">Link</Nav.Link>
-      </Nav.Item>
-    </Nav>
+    <header>
+      <nav>
+        <NavLink to="/">Home</NavLink> |<NavLink to="/blog"> Blogs</NavLink>
+      </nav>
+    </header>
   );
 }
 

@@ -5,4 +5,4 @@ export const STATUS = {
   REJECTED: 'rejected',
 };
 
-export const apiUrl = 'https://jsonplaceholder.typicode.com/users ';
+export const apiUrl = 'https://jsonplaceholder.typicode.com/posts ';
